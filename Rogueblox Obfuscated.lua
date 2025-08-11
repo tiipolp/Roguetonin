@@ -856,9 +856,8 @@ end
 
 setupUi()
 
-coroutine.wrap(function()
-  cheat.register("onSlowUpdate", slowUpdate)
-  cheat.register("onUpdate", fastUpdate)
-  cheat.register("onPaint", renderEsp)
-  cheat.register("newPlace", handleNewPlace)
-end)()
+cheat.register("onSlowUpdate", slowUpdate)
+cheat.register("onUpdate", fastUpdate)
+cheat.register("onPaint", renderEsp)
+cheat.register("newPlace", handleNewPlace)
+
